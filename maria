@@ -1,0 +1,14 @@
+#!/bin/bash
+
+rm taula-del-* 2> /dev/null
+
+for j in `seq 1 10`
+do
+	for i in `seq 1 10`
+	do
+		echo "$jx$i=$(($i*$j))" >> taula-del-$j
+	done
+done	 
+
+
+	

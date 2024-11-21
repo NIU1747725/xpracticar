@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Escriu un nombre de l'1 al 3"
+read var
+
+if [ "$var" == 1 ]; then
+	echo "Ets el primer en arribar"
+elif [ "$var" == 2 ]; then
+	echo "Subcampió de la temporada"
+else
+	echo "A la tercera va la vençuda"
+fi

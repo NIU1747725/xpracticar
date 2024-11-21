@@ -1,0 +1,8 @@
+#!/bin/bash
+línies=$(wc -l file1)
+
+for i in seq 1 "$linies"
+do
+	camp1= $(head -$i file1 | tail -1 | cut -d '' -f1)
+	echo "El camp 1 de la línia $i és $camp1"
+done

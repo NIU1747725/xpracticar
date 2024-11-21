@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Escriu una paraula"
+read paraula
+while ["$paraula" != "q"]
+do   
+	echo "$paraula" >> fitxer.txt
+	sort fitxer.txt > fitxer.sort
+	mv fitcher.sort fitxer.txt
+	echo "Escriu una paraula"
+	read paraula
+done
+

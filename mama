@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Escriu el nom d'un fitxer o directori" 
+
+read var
+
+if [ -d "$var" ]; then
+	echo "$var és un directori"
+elif [ -f "$var" ]; then
+	echo "$var és un fitxer"
+else
+	echo "$var no és ni un fitxer ni un directori"
+fi 

@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Primer nombre"
+read primernum
+echo "operand (+,-,*,/)"
+read op
+echo "Segon nombre"
+read segonnum
+
+echo "$primernum $op $segonnum = $(($primernum $op $segonnum))" 
+
+

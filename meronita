@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Escriu una paraula"
+read paraula
+while ["$paraula" != "q"] 
+do
+echo $paraula >> out.txt
+sort out.txt > outAux.txt
+mv outAux.txt out.txt
+echo "Escriu una paraula"
+read paraula
+done
+cat out.txt

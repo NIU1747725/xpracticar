@@ -1,0 +1,11 @@
+#!/bin/bash
+numlinies= `wc -l < file1
+echo "Número de linies és $numlinies"
+i=0
+let linies=$numlinies+1 
+until [ $i -eq $linies ] 
+do
+	camp1 =`head -$i file1 | tail -1 | cut -d: -f1`
+	echo "El camp 1 de la línia $i és $camp1"
+	let i=$1+1
+done
